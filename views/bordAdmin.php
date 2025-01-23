@@ -4,6 +4,7 @@ require 'includes/footer.php'; ?>
 require '../models/Database.php';
 require '../models/Statistics.php';
 
+
 // Démarrer la session
 Session::start();
 
