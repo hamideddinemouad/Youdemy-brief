@@ -104,7 +104,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             document.getElementById('passwordError').textContent = '';
         }
-
         return isValid;
     }
 </script>
