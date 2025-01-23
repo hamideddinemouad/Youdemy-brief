@@ -198,7 +198,7 @@ $tags = $tag->getAll();
                 document.getElementById('titleError').textContent = '';
             }
 
-            // Validation de la description
+            
             if (description.length < 10 || description.length > 500) {
                 document.getElementById('descriptionError').textContent = 'La description doit contenir entre 10 et 500 caractères.';
                 isValid = false;
@@ -206,7 +206,7 @@ $tags = $tag->getAll();
                 document.getElementById('descriptionError').textContent = '';
             }
 
-            // Validation de la catégorie
+        
             if (!categoryId) {
                 document.getElementById('categoryError').textContent = 'Veuillez sélectionner une catégorie.';
                 isValid = false;
