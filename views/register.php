@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             document.getElementById('usernameError').textContent = '';
         }
 
-        // Validation de l'email
+
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             document.getElementById('emailError').textContent = 'L\'email n\'est pas valide.';
