@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         let isValid = true;
 
-        // Validation de l'email
+        
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             document.getElementById('emailError').textContent = 'L\'email n\'est pas valide.';
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             document.getElementById('emailError').textContent = '';
         }
 
-        // Validation du mot de passe
+        
         if (password.length < 8) {
             document.getElementById('passwordError').textContent = 'Le mot de passe doit contenir au moins 8 caractères.';
             isValid = false;

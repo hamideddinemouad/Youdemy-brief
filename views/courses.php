@@ -36,7 +36,7 @@ try {
     $offset = $pagination->getOffset();
     $courses = array_slice($allCourses, $offset, $itemsPerPage);
 
-    // Afficher la barre de recherche
+ 
     echo "<div class='container mt-4'>";
     echo "<h1 class='text-center mb-4'><i class='bi bi-book'></i> Cours</h1>";
     echo "<form method='GET' action='courses.php' class='mb-4'>";
@@ -49,7 +49,7 @@ try {
     echo "</div>";
     echo "</form>";
 
-    // Afficher les cours
+  
     echo "<div class='row'>";
     foreach ($courses as $course) {
         echo "<div class='col-md-6 col-lg-4 mb-4'>";
