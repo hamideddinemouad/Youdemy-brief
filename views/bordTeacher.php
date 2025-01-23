@@ -190,7 +190,7 @@ $tags = $tag->getAll();
 
             let isValid = true;
 
-            // Validation du titre
+        
             if (title.length < 5 || title.length > 100) {
                 document.getElementById('titleError').textContent = 'Le titre doit contenir entre 5 et 100 caractères.';
                 isValid = false;

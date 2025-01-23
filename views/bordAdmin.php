@@ -7,7 +7,7 @@ require '../models/Statistics.php';
 
 Session::start();
 
-// Vérifier si l'utilisateur est un administrateur
+
 if (!Session::isLoggedIn() || Session::getUserRole() !== 'admin') {
     header('Location: login.php');
     exit();
@@ -21,9 +21,9 @@ $globalStats = $statistics->getGlobalStatistics();
 <div class="container mt-5">
     <h1 class="text-center mb-4">Tableau de Bord Administrateur</h1>
 
-    <!-- Statistiques Globales -->
+   
     <div class="row">
-        <!-- Total des Cours -->
+  
         <div class="col-md-4 mb-4">
             <div class="card text-white bg-primary">
                 <div class="card-body">
@@ -33,7 +33,7 @@ $globalStats = $statistics->getGlobalStatistics();
             </div>
         </div>
 
-        <!-- Total des Utilisateurs -->
+       
         <div class="col-md-4 mb-4">
             <div class="card text-white bg-primary">
                 <div class="card-body">
@@ -43,7 +43,6 @@ $globalStats = $statistics->getGlobalStatistics();
             </div>
         </div>
 
-        <!-- Total des Enseignants -->
         <div class="col-md-4 mb-4">
             <div class="card text-white bg-primary">
                 <div class="card-body">
@@ -53,7 +52,7 @@ $globalStats = $statistics->getGlobalStatistics();
             </div>
         </div>
 
-        <!-- Total des Étudiants -->
+       
         <div class="col-md-4 mb-4">
             <div class="card text-white bg-primary">
                 <div class="card-body">
@@ -64,7 +63,7 @@ $globalStats = $statistics->getGlobalStatistics();
         </div>
     </div>
 
-    <!-- Cours les plus populaires -->
+
     <div class="row">
         <div class="col-md-12 mb-4">
             <div class="card">
